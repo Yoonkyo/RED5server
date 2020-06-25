@@ -12,7 +12,15 @@ Red5 streaming server for video and live streaming
 - Name: RED5_HOME 
 - Value: C:\red5-server
 
-## Configure initial setting
+## Run Red5 
+Execute red5.bat (This file is located in C:\red5-server)
+
+## Verify Red5 is Running
+You can verify that it is running and available by visiting your instance at port 5080.
+Open a web browser and navigate to http://localhost:5080/
+
+
+## Red5 Streaming Demo
 
 # 2. Linux
 
