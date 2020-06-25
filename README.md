@@ -1,9 +1,10 @@
 # RED5server
 Red5 streaming server for video and live streaming
 
-# 1. Windows
+# 1. Windows 
+Installation guide on windows 10 and test on local environment 
 
-## Install RED5 server
+## Install RED5 Server
 To install the Red5 Server:
 1. Download red5-server-1.2.3.zip (Link: https://github.com/Red5/red5-server)
 
@@ -21,12 +22,33 @@ You can verify that it is running and available by visiting your instance at por
 
 Open a web browser and navigate to http://localhost:5080/
 
+If you can enter the default page of RED5, your server is running.
 
 ## Red5 Streaming Demo
+### Video Streming
+1. Click 'demo' on the default page of RED5
+
+2. Click 'OFLA Demo - Classic demo'
+
+3. Move your video file to C:\red5-server\webapps\oflaDemo\streams
+
+4. Click Connect button (You can find your video file on the video list)
+
+5. If you click video that you want to play, the video start to play
+ 
+### Live Streaming
+1. Click 'demo' on the default page of RED5
+
+2. Click 'Publisher'
+
+3. Click 'Connect' and set Video and Audio
+
+4. Change the streaming name and click publish
+
 
 # 2. Linux
 
-## Install RED5 server
+## Install RED5 Server
 https://github.com/Red5/red5-server
 
 ## Configure initial setting
