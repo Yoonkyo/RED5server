@@ -62,11 +62,24 @@ cd /usr/local
 sudo unzip red5-server-1.2.3.zip
 ```
 
-3. Add execute permission to following files:
+4. Add execute permission to following files:
 - red5.sh
 - red5-shutdown.sh
 - red5-debug.sh 
-
 ```c
 sudo chmod +x *.sh
+```
+
+5. Run Red5 server
+```c
+sudo./red5.sh
+```
+
+If you get 'Unable to locate Java. Please set JAVA_HOME environment variable' error message when you run red5 server, you can fix the error by modifying red5.sh. 
+```c
+vi red5.sh
+```
+Add /usr/local/java/bin/java 
+```c
+for JAVA in "/usr/bin/java" "/usr/local/bin/java" "${JAVA_HOME}/bin/java" "${JAVA_HOME}/Home/bin/java" "/usr/local/java/bin/java"
 ```
