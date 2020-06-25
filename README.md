@@ -1,4 +1,4 @@
-# RED5server
+# RED5 server
 Red5 streaming server for video and live streaming
 
 # 1. Windows 
@@ -49,6 +49,24 @@ If you can enter the default page of RED5, your server is running.
 # 2. Linux
 
 ## Install RED5 Server
-https://github.com/Red5/red5-server
+To install the Red5 Server:
+1. Download red5-server-1.2.3.zip (Link: https://github.com/Red5/red5-server)
 
-## Configure initial setting
+2. Move my current directory to /usr/local
+```c
+cd /usr/local
+```
+
+3. Move red5-server-1.2.3.zip to /usr/local and unzip the file
+```c
+sudo unzip red5-server-1.2.3.zip
+```
+
+3. Add execute permission to following files:
+- red5.sh
+- red5-shutdown.sh
+- red5-debug.sh 
+
+```c
+sudo chmod +x *.sh
+```
