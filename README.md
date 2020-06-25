@@ -47,6 +47,7 @@ If you can enter the default page of RED5, your server is running.
 
 
 # 2. Linux
+Installation guide on Linux (Ubuntu 18.04) and test RTMP connection
 
 ## Install RED5 Server
 To install the Red5 Server:
@@ -75,7 +76,7 @@ sudo chmod +x *.sh
 sudo./red5.sh
 ```
 
-If you get 'Unable to locate Java. Please set JAVA_HOME environment variable' error message when you run red5 server, you can fix the error by modifying red5.sh. 
+If you get 'Unable to locate Java. Please set JAVA_HOME environment variable' error message, you can fix the error by modifying red5.sh. 
 ```c
 vi red5.sh
 ```
@@ -83,3 +84,10 @@ Add /usr/local/java/bin/java
 ```c
 for JAVA in "/usr/bin/java" "/usr/local/bin/java" "${JAVA_HOME}/bin/java" "${JAVA_HOME}/Home/bin/java" "/usr/local/java/bin/java"
 ```
+
+## Open Port for RED5 Server
+
+## Check RTMP connection
+### Video Streaming
+
+### Live Streaming
