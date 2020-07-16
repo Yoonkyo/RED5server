@@ -86,8 +86,25 @@ for JAVA in "/usr/bin/java" "/usr/local/bin/java" "${JAVA_HOME}/bin/java" "${JAV
 ```
 
 ## Open Port for RED5 Server
+Open 1935, 1936, 3690, 5080, 8088 port
+```c
+sudo iptables -I INPUT 1 -p tcp --dport 1935 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 1936 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 3690 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 5080 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 8088 -j ACCEPT
+```
 
 ## Check RTMP connection
 ### Video Streaming
+1) Move a video file to "Your_Red5_route/oflaDemo/streams" directory 
+2) Test with your video player (connect rtmp://localhost:1935/oflaDemo/videofile)
+If you want to change oflaDemo to other name, edit web.xml and red5-web.properties located in ~/oflaDemo/WEB-INF
 
 ### Live Streaming
+Use broadcast application to publish your live streaming. I utilized OBS studio.
+1) Connect rtmp://localhost:1935/live and set your broadcast name(e.g. myobsstream)
+2) Set other configure (Audio, Mic..) 
+3) Click 'start streaming'
+4) Test with your video player (connect rtmp://localhost:1935/live/myobsstream)
+If you want to change live to other name, edit web.xml and red5-web.properties located in ~/live/WEB-INF
